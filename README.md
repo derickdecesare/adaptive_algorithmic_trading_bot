@@ -56,6 +56,16 @@ The training data was sliced into different periods ranging from 1 month -36 mon
 One month training period.
 
 
+
+
+| One-Month  | Six-Month |
+| ------------- | ------------- |
+| ![1month](Images/1month.png)  | ![6month](Images/6month.png)  |
+
+| Nine-Month  | Twenty-four-Month |
+| ------------- | ------------- |
+| ![9month](Images/9month.png)  | ![24month](Images/24month.png)  |
+
 ![1month](Images/1month.png)
 
 Six month training period.
