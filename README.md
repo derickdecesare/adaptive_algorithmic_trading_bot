@@ -49,10 +49,13 @@ As you can see, applying the predicted signals resulted in increased cumulative 
 
 In order to optimize our algorithm we experimented with adjusting the input parameters to find the combination that results in the best trading outcomes.
 
+
+
+
+
 #### Adjusting Size of Training Dataset
 
 The training data was sliced into different periods ranging from 1 month -36 months. Shown below are the results of each training period.
-
 
 | One-Month  | Six-Month |
 | ------------- | ------------- |
@@ -68,6 +71,10 @@ The training data was sliced into different periods ranging from 1 month -36 mon
 
 
 When the training period was decreased we saw reduced returns. When the training period was increased we saw increased returns up untill a six month training period. Increasing the training period more than six months resulted in reduced returns. Therefore the six month training period produced the largest cumulative returns for the model.
+
+
+
+
 
 #### Adjusting SMA Input Features
 
@@ -91,6 +98,10 @@ When we decreased the short SMA we saw a reduction in returns. When we decreased
 
 Based on this experiementation combining the Four-day short SMA and One-hundred-fiftey day long SMA resulted in the highest cumulative returns for the model.
 
+
+
+
+
 #### Optimal Combination of Parameters
 
 The optimal combination of parameters was a six month training period combined with a Four-day short SMA and One-hundred-fiftey day long SMA. 
@@ -99,6 +110,10 @@ Optimal Strategy:
 
 
 ![4-150](Images/4short150long.png)
+
+
+
+
 
 ### Evaluating a New Machine Learning Classifier
 
@@ -110,6 +125,10 @@ SVM                        |  AdaBoost
 
 
 Although this model produced the same accuracy score it resulted in larger cumulative gains for the model. Therefore the AdaBoost classifier seems to be slightly more optimal for this trading algorithim
+
+
+
+
 
 ## Conclusion
 
