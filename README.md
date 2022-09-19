@@ -27,11 +27,12 @@ This project leverages python 3.7 with the following packages:
 
 Dataset pulled from Resources folder which contains csv file of an emerging market stock index time series in OHLCV format.
 
+
 ## Usage
 
-### General
-
 This is designed to be run in jupyter lab. Upon launching machine_learning_trading_bot.ipynb run each cell sequentially, ensuring to import the required libraries and install the required dependencies.
+
+### Evaluation Report
 
 ### Establishing Baseline with SVM
 
@@ -97,9 +98,12 @@ Optimal Strategy:
 
 ### Evaluating a New Machine Learning Classifier
 
-This uses the original parameters and applies the AdaBoost classifier to determine if it will result in more favorable trading outcomes.
+This uses the original parameters and applies the AdaBoost classifier to determine if it will result in more favorable trading outcomes. Here is a comparison between the SVM and AdaBoost models.
 
-![ada](Images/ada_baseline.png)
+SVM                        |  AdaBoost
+:-------------------------:|:-------------------------:
+![](Images/3month_baseline.png)   |  ![](Images/ada_baseline.png)
+
 
 Although this model produced the same accuracy score it resulted in larger cumulative gains for the model. Therefore the AdaBoost classifier seems to be slightly more optimal for this trading algorithim
 
