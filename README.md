@@ -55,12 +55,16 @@ The training data was sliced into different periods ranging from 1 month -36 mon
 
 One month training period.
 ![1month](Images/1month.png)
+
 Six month training period.
 ![6month](Images/6month.png)
+
 Nine month training period.
 ![9month](Images/9month.png)
+
 Twenty-four month training period.
 ![24month](Images/24month.png)
+
 Thirty-Six month training period.
 ![36month](Images/36month.png)
 
@@ -71,19 +75,19 @@ When the training period was decreased we saw reduced returns. When the training
 The short and long SMA features were then adjusted to determine the best combination. Show below are the results
 
 Two day short SMA, One-hundred day long SMA
-![2-100](Images/2short100long.png)
+![2short100long](Images/2short100long.png)
 Two day short SMA, Fiftey day long SMA
-![2-50](Images/2short50long.png)
+![2short50long](Images/2short50long.png)
 Four day short SMA, One-hundred-fiftey day long SMA
-![4-150](Images/4short150long.png)
+![4short150long](Images/4short150long.png)
 Four day short SMA, Two-hundred day long SMA
-![4-200](Images/4short200long.png)
+![4short200long](Images/4short200long.png)
 Eight day short SMA, One-hundred day long SMA
-![8-100](Images/8short100long.png)
+![8short100long](Images/8short100long.png)
 Eight day short SMA, One-hundred-fiftey day long SMA
-![8-150](Images/8short150long.png)
+![8short150long](Images/8short150long.png)
 Fiftey day short SMA, Two-hundred day long SMA
-![50-200](Images/50short200long.png)
+![50short200long](Images/50short200long.png)
 
 When we decreased the short SMA we saw a reduction in returns. When we decreased the short SMA and long SMA together we also saw a reduction in returns. When we increased the long SMA and kept the short SMA the same we saw an increase in returns. When we increased long SMA more than 150 we saw diminishing returns. When we increased the short SMA and kept the long SMA the saw we saw a reduction in returns. When we increased the short SMA and long SMA we saw a reduction in returns. When we increased the short SMA and long SMA dramtically we saw a reduction in reuturns
 
