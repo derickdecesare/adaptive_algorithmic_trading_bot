@@ -53,10 +53,6 @@ In order to optimize our algorithm we experimented with adjusting the input para
 
 The training data was sliced into different periods ranging from 1 month -36 months. Shown below are the results of each training period.
 
-One month training period.
-
-
-
 
 | One-Month  | Six-Month |
 | ------------- | ------------- |
@@ -66,27 +62,10 @@ One month training period.
 | ------------- | ------------- |
 | ![9month](Images/9month.png)  | ![24month](Images/24month.png)  |
 
-![1month](Images/1month.png)
+| Three-Month  | Thirty-Six-Month |
+| ------------- | ------------- |
+| ![baseline](Images/3month_baseline.png)  | ![36month](Images/36month.png)  |
 
-Six month training period.
-
-
-![6month](Images/6month.png)
-
-Nine month training period.
-
-
-![9month](Images/9month.png)
-
-Twenty-four month training period.
-
-
-![24month](Images/24month.png)
-
-Thirty-Six month training period.
-
-
-![36month](Images/36month.png)
 
 When the training period was decreased we saw reduced returns. When the training period was increased we saw increased returns up untill a six month training period. Increasing the training period more than six months resulted in reduced returns. Therefore the six month training period produced the largest cumulative returns for the model.
 
@@ -94,22 +73,21 @@ When the training period was decreased we saw reduced returns. When the training
 
 The short and long SMA features were then adjusted to determine the best combination. Show below are the results
 
-Two day short SMA, One-hundred day long SMA
-![2short100long](Images/sma2short100long.png)
-Two day short SMA, Fiftey day long SMA
-![2short50long](Images/sma2short50long.png)
-Four day short SMA, One-hundred-fiftey day long SMA
-![4short150long](Images/sma4short150long.png)
-Four day short SMA, Two-hundred day long SMA
-![4short200long](Images/sma4short200long.png)
-Eight day short SMA, One-hundred day long SMA
-![8short100long](Images/sma8short100long.png)
-Eight day short SMA, One-hundred-fiftey day long SMA
-![8short150long](Images/sma8short150long.png)
-Fiftey day short SMA, Two-hundred day long SMA
-![50short200long](Images/sma50short200long.png)
 
-When we decreased the short SMA we saw a reduction in returns. When we decreased the short SMA and long SMA together we also saw a reduction in returns. When we increased the long SMA and kept the short SMA the same we saw an increase in returns. When we increased long SMA more than 150 we saw diminishing returns. When we increased the short SMA and kept the long SMA the saw we saw a reduction in returns. When we increased the short SMA and long SMA we saw a reduction in returns. When we increased the short SMA and long SMA dramtically we saw a reduction in reuturns
+| Two day short, One-hundred day long  | Two day short, Fiftey day long |
+| ------------- | ------------- |
+| ![2short100long](Images/sma2short100long.png)  | ![2short50long](Images/sma2short50long.png)  |
+
+| Four day short, One-hundred-fiftey day long  | Four day short, Two-hundred day long |
+| ------------- | ------------- |
+| ![4short150long](Images/sma4short150long.png)  | ![4short200long](Images/sma4short200long.png)  |
+
+| Eight day short, One-hundred day  | Eight day short, One-hundred-fiftey day long |
+| ------------- | ------------- |
+| ![8short100long](Images/sma8short100long.png)  | ![8short150long](Images/sma8short150long.png)  |
+
+
+When we decreased the short SMA we saw a reduction in returns. When we decreased the short SMA and long SMA together we also saw a reduction in returns. When we increased the long SMA and kept the short SMA the same we saw an increase in returns. When we increased long SMA more than 150 we saw diminishing returns. When we increased the short SMA and kept the long SMA the saw we saw a reduction in returns. When we increased the short SMA and long SMA we saw a reduction in returns.
 
 Based on this experiementation combining the Four-day short SMA and One-hundred-fiftey day long SMA resulted in the highest cumulative returns for the model.
 
@@ -118,6 +96,8 @@ Based on this experiementation combining the Four-day short SMA and One-hundred-
 The optimal combination of parameters was a six month training period combined with a Four-day short SMA and One-hundred-fiftey day long SMA. 
 
 Optimal Strategy:
+
+
 ![4-150](Images/4short150long.png)
 
 ### Evaluating a New Machine Learning Classifier
