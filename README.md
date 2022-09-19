@@ -54,18 +54,28 @@ In order to optimize our algorithm we experimented with adjusting the input para
 The training data was sliced into different periods ranging from 1 month -36 months. Shown below are the results of each training period.
 
 One month training period.
+
+
 ![1month](Images/1month.png)
 
 Six month training period.
+
+
 ![6month](Images/6month.png)
 
 Nine month training period.
+
+
 ![9month](Images/9month.png)
 
 Twenty-four month training period.
+
+
 ![24month](Images/24month.png)
 
 Thirty-Six month training period.
+
+
 ![36month](Images/36month.png)
 
 When the training period was decreased we saw reduced returns. When the training period was increased we saw increased returns up untill a six month training period. Increasing the training period more than six months resulted in reduced returns. Therefore the six month training period produced the largest cumulative returns for the model.
