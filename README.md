@@ -34,7 +34,7 @@ This is designed to be run in jupyter lab. Upon launching machine_learning_tradi
 
 ### Evaluation Report
 
-### Establishing Baseline with SVM
+### Establishing Baseline with SVM:
 
 After adding a four-day short and a one-hundred-day long SMA, and training the model using three months of data this model predicts signals for longing and shorting the stock index using SVM machine learning model.
 
@@ -45,7 +45,7 @@ Then we applied the predicted signals to the test data. The graph below shows th
 As you can see, applying the predicted signals resulted in increased cumulative returns comparitive to the actual returns. 
 
 
-### Tuning the Baseline Trading Algorithm
+### Tuning the Baseline Trading Algorithm:
 
 In order to optimize our algorithm we experimented with adjusting the input parameters to find the combination that results in the best trading outcomes.
 
@@ -53,7 +53,7 @@ In order to optimize our algorithm we experimented with adjusting the input para
 
 
 
-#### Adjusting Size of Training Dataset
+#### Adjusting Size of Training Dataset:
 
 The training data was sliced into different periods ranging from 1 month -36 months. Shown below are the results of each training period.
 
@@ -76,7 +76,7 @@ When the training period was decreased we saw reduced returns. When the training
 
 
 
-#### Adjusting SMA Input Features
+#### Adjusting SMA Input Features:
 
 The short and long SMA features were then adjusted to determine the best combination. Show below are the results
 
@@ -102,20 +102,20 @@ Based on this experiementation combining the Four-day short SMA and One-hundred-
 
 
 
-#### Optimal Combination of Parameters
+#### Optimal Combination of Parameters:
 
 The optimal combination of parameters was a six month training period combined with a Four-day short SMA and One-hundred-fiftey day long SMA. 
 
 Optimal Strategy:
 
 
-![4-150](Images/4short150long.png)
+![4-150](Images/sma4short150long.png)
 
 
 
 
 
-### Evaluating a New Machine Learning Classifier
+### Evaluating a New Machine Learning Classifier:
 
 This uses the original parameters and applies the AdaBoost classifier to determine if it will result in more favorable trading outcomes. Here is a comparison between the SVM and AdaBoost models.
 
@@ -130,6 +130,6 @@ Although this model produced the same accuracy score it resulted in larger cumul
 
 
 
-## Conclusion
+## Conclusion:
 
 The highest cumulative returns came from increasing the training period to 6 months, and ajusting the feature inputs to a four-day short SMA and One-hundred-fiftey day long SMA using the SVM machine learning classifier. Futher research is needed to determine what the optimal parameters are for the AdaBoost classifier. When comparing the baseline AdaBoost to the baseline SVM it does perform better so this suggests that it may be a superior machine learning classifier for this problem.
